@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BASE APPAREL</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-container">
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="Logo Base Appareal" class="logo" />
+        </div>
+
+        <div class="Mobile-Hero"></div>
+
+        <div class="main-title-container">
+          <p class="main-title">
+            We're <strong> <b> Coming Soon </b> </strong>
+          </p>
+        </div>
+
+        <p class="texto">
+          Hello fellow shoppers! We're currentltybuilding our new <br />
+          fashion store. Add your email below to satay up-to-date <br />
+          with announcements and our launch deals.
+        </p>
+
+        <div class="container-form">
+          <form class="form-class" novalidate>
+            <div>
+              <!-- Siempre debemos tener ésta etiqueta -->
+              <input
+                type="email"
+                class="input-form"
+                id="email-address"
+                name="email"
+                placeholder="Email Address"
+              />
+              <button id="submit-button" class="button-arrow">
+                <i style="color: aliceblue" class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+          <p id="error-message" class="error-message"></p>
+        </div>
+        <div class="footer-left">
+          <strong>
+            <p>
+              <!-- unicode para generar el corazon, TO DO: revisar unicode-->
+              Coded with <span class="heart">&#9829;</span> by
+              <span class="signature"> Sara R.O</span>.
+            </p>
+          </strong>
+        </div>
+      </div>
+      <div class="right-container"></div>
+    </div>
+  </body>
+  <script src="./formulario.js"></script>
+  <script
+    src="https://kit.fontawesome.com/12f21fd428.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

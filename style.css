@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Variables para reutilizar los colores*/
+  --primary: #c2999a;
+  --secondary: #42393a;
+  --error: #f96465;
+  --inactive: #f7cbca;
+  --success: #8bc34a;
+  --signature: #f09495;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.main-title-container {
+  width: 20vw;
+  margin-top: 200px;
+}
+
+.main-title {
+  color: var(--primary);
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.22em;
+  margin-left: 300px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.main-title > strong {
+  color: var(--secondary);
+  margin-top: 500px;
+}
+
+.texto {
+  color: var(--primary);
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 300px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.container-form {
+  margin-top: 15px;
+  margin-left: 300px;
+}
+
+.logo {
+  width: 45%;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.Mobile-Hero {
+  display: none;
+}
+
+.right-container {
+  width: 40%;
+  height: 100vh;
+  background-image: url(./assets/hero-desktop.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.left-container {
+  width: 60%;
+  height: 100vh;
+  background-image: url(./assets/bg-pattern-desktop.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.footer-left {
+  margin-left: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+
+.input-form {
+  border-radius: 25px; /* esto va en pixeles */
+  border: 2px solid var(--primary);
+  padding-left: 25px;
+  font-size: 18px;
+  height: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  width: 500px;
+}
+.input-form::placeholder {
+  color: var(--primary);
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+
+.button-arrow {
+  /* TO DO: estudiar todas los valores de la propiedad position */
+  position: absolute;
+  margin-left: -50px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--signature);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 70px;
+  height: 50px;
+}
+
+.signature {
+  color: var(--signature);
+}
+
+.heart {
+  color: var(--error);
+}
+
+.desktop-hero-img {
+  width: 93%;
+}
+
+.error-message {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 5px;
+  color: var(--error);
+}
+
+.input-error {
+  border: 2px solid var(--error);
+}
+
+.input-success {
+  border: 2px solid var(--success);
+}
+
+.button-error {
+  background-color: var(--error);
+}
+
+.button-success {
+  background-color: var(--success);
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .right-container {
+    display: none;
+  }
+  .left-container {
+    width: 100%;
+  }
+  .logo {
+    width: 250px;
+    margin-left: 35px;
+    margin-top: 30px;
+  }
+
+  .Mobile-Hero {
+    display: block;
+    width: 100%;
+    height: 30vh;
+    background-image: url(./assets/hero-mobile.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .texto {
+    font-size: 15px;
+    padding: 2px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .container-form {
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .form-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-form {
+    width: 250px;
+    margin: 0 auto;
+    align-self: center;
+  }
+
+  .main-title {
+    margin-left: 0px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .main-title-container {
+    width: 100vw;
+    margin-top: 20px;
+  }
+  .footer-left {
+    margin-left: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 17px;
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    padding: 10px;
+  }
+}
